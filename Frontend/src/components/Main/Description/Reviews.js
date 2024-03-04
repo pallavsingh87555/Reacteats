@@ -14,7 +14,7 @@ export default function Reviews({ name }) {
       setLoading("1");
       // const fetchUrl = 'https://reacteats-884d9-default-rtdb.firebaseio.com/';
       // const response = await fetch(fetchUrl + 'reviews/' + name + '/.json');
-      const response = await fetch("http://localhost:5000/Main/" + name)
+      const response = await fetch("https://backend-xeub.onrender.com/Main/" + name)
       const data = await response.json();
       const reviewsArr = [];
       for (const key in data) {

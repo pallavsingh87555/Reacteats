@@ -3,7 +3,7 @@ export async function getData(setLoading, setHistory) {
   // const fetchUrl = 'https://reacteats-884d9-default-rtdb.firebaseio.com/';
   // const response = await fetch(fetchUrl + localStorage.getItem("id") + '/history.json');
   try {
-    const response = await fetch("http://localhost:5000/History/" + localStorage.getItem('id'));
+    const response = await fetch("https://backend-xeub.onrender.com/History/" + localStorage.getItem('id'));
     const data = await response.json();
     const historyArr = [];
     for (const key in data) {

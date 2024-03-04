@@ -16,7 +16,7 @@ export default function AddReview({ name, closeReview }) {
     // };
     // const fetchUrl = 'https://reacteats-884d9-default-rtdb.firebaseio.com/';
     // await fetch(fetchUrl + 'reviews/' + name + '/.json', { method: 'POST', body: JSON.stringify(reviewData) })
-    await fetch("http://localhost:5000/Main", {
+    await fetch("https://backend-xeub.onrender.com/Main", {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ username: localStorage.getItem("username"), stars: rating, review: review, item: name })
