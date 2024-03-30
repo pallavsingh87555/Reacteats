@@ -21,11 +21,11 @@ export default function Cart(props) {
 				var index = props.items.findIndex(i => i.title === key);
 				let obj = {
 					title: key,
-					quantity: props.items[index].quantity,
-					imageSrc: props.items[index].name,
-					price: props.items[index].price * parseInt(localStorage.getItem(key)),
-					type: props.items[index].type,
-					noOfItems: localStorage.getItem(key)
+					quantity: props?.items[index]?.quantity,
+					imageSrc: props?.items[index]?.name,
+					price: props?.items[index]?.price * parseInt(localStorage.getItem(key)),
+					type: props?.items[index]?.type,
+					noOfItems: localStorage?.getItem(key)
 				};
 				cartArr.push(obj);
 			};
