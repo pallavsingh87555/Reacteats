@@ -7,6 +7,8 @@ import CartSummary from './Checkout/CartSummary';
 
 var cartArr = [];
 
+
+
 export default function Cart(props) {
 	const [items, setItems] = useState(0);
 	const [arr, setArr] = useState(cartArr);
